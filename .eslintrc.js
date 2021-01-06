@@ -18,7 +18,9 @@ module.exports = {
     'no-console': 'off',
     'no-debugger': 'off',
     'space-before-function-paren': 0,
-    eqeqeq: 0
+    eqeqeq: 0,
+    'dot-notation': 0
+
   }
 
 }
