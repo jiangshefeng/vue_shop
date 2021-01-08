@@ -8,11 +8,11 @@
       <!-- 表单登录区域 -->
       <el-form label-width="0px" class="login_form" :model="form" :rules="loginRules" ref="formDom">
         <!-- 用户名 -->
-        <el-form-item prop="name">
+        <el-form-item prop="username">
           <el-input prefix-icon="el-icon-s-custom" placeholder="用户名" v-model="form.username"></el-input>
         </el-form-item>
         <!-- 密码 -->
-        <el-form-item prop="pw">
+        <el-form-item prop="password">
           <el-input
             prefix-icon="el-icon-lock"
             placeholder="密码"

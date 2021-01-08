@@ -7,7 +7,8 @@
       </div>
       <el-button type="info" @click="logOut">退出</el-button>
     </el-header>
-    <el-container>
+
+    <el-container class="home-middle">
       <el-aside :width="toggleWidth">
         <div class="toggleButton" @click="toggleCollapse">|||</div>
         <!-- 侧边栏菜单区域 -->
@@ -113,12 +114,14 @@ export default {
 }
 .el-aside {
   background-color: #313743;
+
   .el-menu {
     border-right: none;
   }
 }
 .el-main {
   background-color: snow;
+  overflow: scroll;
 }
 .home-container {
   height: 100%;
@@ -131,5 +134,8 @@ export default {
   letter-spacing: 2px;
   font-size: 14px;
   line-height: 24px;
+}
+.home-middle {
+  overflow: hidden;
 }
 </style>
