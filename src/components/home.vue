@@ -31,7 +31,7 @@
             </template>
             <!-- 二级菜单 -->
             <el-menu-item
-              :index="String(subItem.path) "
+              :index="'/home/'+ String(subItem.path) "
               v-for="subItem in item.children"
               :key="subItem.id"
             >
@@ -70,7 +70,8 @@ export default {
     },
     activePath() {
       const path = this.$route.path.split('/')
-      const activePath = path[path.length - 1]
+      const activePath = '/' + path[1] + '/' + path[2]
+
       return activePath
     }
   },
@@ -88,6 +89,7 @@ export default {
         return this.$message.error(res.meta.message)
       }
       this.menuList = res.data
+      console.log(this.menuList)
     },
     toggleCollapse() {
       this.isCollapse = !this.isCollapse

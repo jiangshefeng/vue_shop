@@ -23,3 +23,12 @@ html,body,#app{
 .el-cascader-panel {
     height: 300px !important;
   }
+  .el-steps{
+      margin: 15px 0px;
+  }
+  .el-step__title{
+      font-size: 13px;
+  }
+  .ql-container.ql-snow {
+    min-height: 300px !important;
+  }

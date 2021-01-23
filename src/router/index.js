@@ -8,6 +8,8 @@ import right from '../components/power/right.vue'
 import roles from '../components/power/roles.vue'
 import Cate from '../components/goods/cate.vue'
 import Params from '../components/goods/Params.vue'
+import List from '../components/goods/List.vue'
+import Add from '../components/goods/add.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -18,12 +20,14 @@ const routes = [
     component: Home,
     redirect: '/home/welcome',
     children: [
-      { path: 'welcome', component: Welcome },
-      { path: 'users', component: Users },
-      { path: 'rights', component: right },
-      { path: 'roles', component: roles },
-      { path: 'categories', component: Cate },
-      { path: 'params', component: Params }
+      { path: '/home/welcome', component: Welcome },
+      { path: '/home/users', component: Users },
+      { path: '/home/rights', component: right },
+      { path: '/home/roles', component: roles },
+      { path: '/home/categories', component: Cate },
+      { path: '/home/params', component: Params },
+      { path: '/home/goods', component: List },
+      { path: '/home/goods/add', component: Add }
     ]
   }
 ]
